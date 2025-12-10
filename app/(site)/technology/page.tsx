@@ -215,7 +215,7 @@ function AnimatedCategory({ title, desc, items }: CategoryProps) {
     >
       {/* LEFT SECTION */}
       <div>
-        <h2 className="text-3xl font-bold text-[#142d54]">{title}</h2>
+        <h2 className="text-3xl font-bold text-[#e28c39]">{title}</h2>
         <p className="text-gray-600 mt-3 max-w-md">{desc}</p>
       </div>
 

@@ -6,8 +6,8 @@ import Footer from "@/components/Footer";
 import "./globals.css";
 
 export const metadata = {
-  title: "My Portfolio",
-  description: "Portfolio website",
+  title: "Web Sathi",
+  description: "Best IT company in Kathmandu Nepal,",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

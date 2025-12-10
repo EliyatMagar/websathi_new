@@ -7,6 +7,7 @@ import { JSX } from "react";
 export default function Hero(): JSX.Element {
   return (
     <section
+    
       className="relative w-full min-h-screen flex items-center justify-center 
       bg-linear-to-br from-[#eaf3ff] via-[#dce8f7] to-[#c8d6eb] overflow-hidden"
     >
@@ -15,7 +16,7 @@ export default function Hero(): JSX.Element {
 
       {/* Soft Motion Gradient Streaks */}
       <div className="absolute -top-20 -left-20 w-[400px] h-[400px] bg-linear-to-br from-[#e08936]/40 to-transparent blur-[120px] animate-pulse"></div>
-      <div className="absolute bottom-0 right-0 w-[450px] h-[450px] bg-gradient-to-tl from-[#142d54]/30 to-transparent blur-[160px] animate-pulse"></div>
+      <div className="absolute bottom-0 right-0 w-[450px] h-[450px] bg-linear-to-tl from-[#142d54]/30 to-transparent blur-[160px] animate-pulse"></div>
 
       {/* Floating shapes */}
       <div className="absolute top-20 right-1/3 animate-bounce-slow">
@@ -36,7 +37,7 @@ export default function Hero(): JSX.Element {
           <br />
           <span className="relative inline-block mt-2 text-[#e08936]">
             Websites That Grow Your Business
-            <span className="absolute left-0 bottom-[-4px] w-full h-[6px] bg-[#e08936]/40 rounded-full animate-underline"></span>
+            <span className="absolute left-0 bottom-1 w-full h-1.5 bg-[#e08936]/40 rounded-full animate-underline"></span>
           </span>
         </h1>
 
@@ -66,7 +67,7 @@ export default function Hero(): JSX.Element {
             href="/contact"
             className="inline-flex items-center bg-[#142d54] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#0d1e38] transition-all shadow-md hover:shadow-xl hover:-translate-y-1"
           >
-            Get Started
+            Get Quotation
             <ArrowRight className="ml-2 w-5 h-5" />
           </Link>
           <Link

@@ -6,11 +6,13 @@ import PortfolioSection from '@/components/sections/PortfolioSection';
 import BlogSection from '@/components/sections/BlogSection';
 import VideosSection from '@/components/sections/VideoSection';
 import CTASection from '@/components/sections/CTASection';
+import ServicesSection from '@/components/sections/ServiceSection';
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white overflow-hidden">
       <HeroSection />
+      <ServicesSection/>
       <PortfolioSection />
       <BlogSection />
       <VideosSection />
