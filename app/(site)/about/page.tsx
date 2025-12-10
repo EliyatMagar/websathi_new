@@ -1,207 +1,192 @@
-import { Metadata } from 'next';
+"use client";
 
-export const metadata: Metadata = {
-  title: 'About - Creative Digital Influencer & Designer',
-  description: 'Discover the journey of a multi-talented content creator, YouTuber, and graphics designer passionate about digital innovation.',
-};
+import { motion } from "framer-motion";
+import {
+  Rocket,
+  Target,
+  Users,
+  Code2,
+  Megaphone,
+  Brush,
+  ShieldCheck,
+  Layers,
+  Eye
+} from "lucide-react";
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
-      <div className="container mx-auto px-4 py-30 max-w-6xl">
-        {/* Header Section */}
-        <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
-            About The Creator
-          </h1>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Digital Storyteller • Visual Artist • Content Innovator
-          </p>
-        </div>
+    <div className="bg-[#f5f8fb]">
 
-        {/* Stats Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
-          <div className="text-center p-6 bg-gray-800 rounded-lg border border-gray-700">
-            <div className="text-3xl font-bold text-purple-400 mb-2">50K+</div>
-            <div className="text-gray-400">Subscribers</div>
-          </div>
-          <div className="text-center p-6 bg-gray-800 rounded-lg border border-gray-700">
-            <div className="text-3xl font-bold text-pink-400 mb-2">500+</div>
-            <div className="text-gray-400">Videos Created</div>
-          </div>
-          <div className="text-center p-6 bg-gray-800 rounded-lg border border-gray-700">
-            <div className="text-3xl font-bold text-blue-400 mb-2">1000+</div>
-            <div className="text-gray-400">Designs</div>
-          </div>
-          <div className="text-center p-6 bg-gray-800 rounded-lg border border-gray-700">
-            <div className="text-3xl font-bold text-green-400 mb-2">5+</div>
-            <div className="text-gray-400">Years Experience</div>
-          </div>
-        </div>
+      {/* ---------------- HERO ---------------- */}
+      <section className="relative bg-gradient-to-r from-[#142d54] to-[#20457a] text-white py-32 px-6 text-center overflow-hidden">
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-5xl md:text-6xl font-bold"
+        >
+          About WebSathi
+        </motion.h1>
 
-        {/* Core Values */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-          <div className="text-center group hover:transform hover:scale-105 transition-all duration-300">
-            <div className="bg-gradient-to-br from-purple-600 to-purple-800 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 group-hover:shadow-lg group-hover:shadow-purple-500/25">
-              <span className="text-3xl">🎬</span>
-            </div>
-            <h3 className="text-xl font-semibold mb-3">Content Creation</h3>
-            <p className="text-gray-400">
-              Crafting engaging videos and digital content that resonates with audiences worldwide
-            </p>
-          </div>
-          
-          <div className="text-center group hover:transform hover:scale-105 transition-all duration-300">
-            <div className="bg-gradient-to-br from-pink-600 to-pink-800 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 group-hover:shadow-lg group-hover:shadow-pink-500/25">
-              <span className="text-3xl">🎨</span>
-            </div>
-            <h3 className="text-xl font-semibold mb-3">Visual Design</h3>
-            <p className="text-gray-400">
-              Creating stunning graphics and visual experiences that tell compelling stories
-            </p>
-          </div>
-          
-          <div className="text-center group hover:transform hover:scale-105 transition-all duration-300">
-            <div className="bg-gradient-to-br from-blue-600 to-blue-800 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 group-hover:shadow-lg group-hover:shadow-blue-500/25">
-              <span className="text-3xl">💡</span>
-            </div>
-            <h3 className="text-xl font-semibold mb-3">Digital Influence</h3>
-            <p className="text-gray-400">
-              Building communities and driving trends through authentic digital presence
-            </p>
-          </div>
-        </div>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="mt-6 max-w-2xl mx-auto text-gray-200 text-lg md:text-xl"
+        >
+          Building impactful digital solutions since <span className="text-[#e28c39] font-semibold">2025</span>.
+          Empowering businesses with technology that drives growth and innovation.
+        </motion.p>
 
-        {/* Main Content */}
-        <div className="bg-gray-800 rounded-2xl p-8 mb-12 border border-gray-700">
-          <h2 className="text-3xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
-            My Creative Journey
-          </h2>
-          <div className="space-y-4 text-gray-300">
-            <p>
-              As a multi-faceted digital creator, I've spent years mastering the art of online 
-              storytelling through various mediums. From YouTube videos that entertain and educate, 
-              to stunning graphics that capture attention, my mission is to create memorable 
-              digital experiences.
-            </p>
-            <p>
-              What started as a passion for design and content creation has evolved into a 
-              thriving digital presence. I believe in the power of visual storytelling and 
-              its ability to connect people across the globe.
-            </p>
-            <p>
-              When I'm not creating content, you'll find me exploring new design trends, 
-              experimenting with video techniques, or engaging with my amazing community 
-              of followers and supporters.
-            </p>
-          </div>
-        </div>
+        {/* Decorative Shapes */}
+        <div className="absolute top-0 left-0 w-40 h-40 bg-[#e28c39]/20 rounded-full -translate-x-1/2 -translate-y-1/2" />
+        <div className="absolute bottom-0 right-0 w-60 h-60 bg-[#e28c39]/20 rounded-full translate-x-1/3 translate-y-1/3" />
+      </section>
 
-        {/* Skills & Platforms */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700">
-            <h3 className="text-2xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400">
-              Creative Skills
-            </h3>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="space-y-3">
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                  <span>Video Production</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                  <span>Motion Graphics</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                  <span>UI/UX Design</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                  <span>Brand Identity</span>
-                </div>
+      {/* ---------------- OUR JOURNEY ---------------- */}
+      <section className="max-w-7xl mx-auto px-6 py-24">
+        <h2 className="text-4xl md:text-5xl font-bold text-[#142d54] text-center mb-16">Our Journey</h2>
+
+        <div className="relative border-l-2 border-[#e28c39] ml-8">
+          {/* Timeline Items */}
+          {[
+            {
+              year: "July 2025",
+              title: "Founded WebSathi",
+              desc: "WebSathi was established with a vision to empower businesses using modern technology."
+            },
+            {
+              year: "Mid-July 2025",
+              title: "First Client – Consultancy Website",
+              desc: "Our first client was a consultancy website from Australia. This project helped us set a strong foundation for quality delivery."
+            },
+            {
+              year: "August 2025",
+              title: "Small Projects",
+              desc: "Completed several small projects including portfolio websites and basic apps for startups."
+            },
+            {
+              year: "September 2025",
+              title: "Full E-commerce Platform",
+              desc: "Delivered our first full e-commerce platform for a supermarket, marking a milestone in handling larger projects."
+            },
+          ].map((item, idx) => (
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: idx * 0.2 }}
+              className="mb-12 relative pl-12"
+            >
+              <div className="absolute -left-7 top-1 w-5 h-5 rounded-full bg-[#e28c39]" />
+              <p className="text-[#e28c39] font-semibold text-lg">{item.year}</p>
+              <h4 className="text-2xl font-bold text-[#142d54] mt-1">{item.title}</h4>
+              <p className="text-gray-600 mt-2">{item.desc}</p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* ---------------- MISSION & VISION ---------------- */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+          {/* Mission */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="p-12 bg-[#f8fbff] rounded-3xl shadow-lg hover:shadow-xl transition-all"
+          >
+            <Target className="w-12 h-12 text-[#e28c39]" />
+            <h3 className="text-3xl font-bold text-[#142d54] mt-4">Our Mission</h3>
+            <p className="text-gray-700 mt-4">Empower businesses with modern, reliable, and scalable digital solutions that drive growth.</p>
+          </motion.div>
+
+          {/* Vision */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+            className="p-12 bg-[#f8fbff] rounded-3xl shadow-lg hover:shadow-xl transition-all"
+          >
+            <Eye className="w-12 h-12 text-[#e28c39]" />
+            <h3 className="text-3xl font-bold text-[#142d54] mt-4">Our Vision</h3>
+            <p className="text-gray-700 mt-4">Become a globally recognized tech partner known for quality, trust, and innovation.</p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ---------------- SERVICES ---------------- */}
+      <section className="py-24 max-w-7xl mx-auto px-6 text-center">
+        <h2 className="text-4xl md:text-5xl font-bold text-[#142d54] mb-8">What We Do</h2>
+        <p className="text-gray-600 max-w-2xl mx-auto mb-16">
+          Full-service digital solutions to help your business grow efficiently.
+        </p>
+
+        <div className="grid md:grid-cols-3 gap-12">
+          {[
+            { icon: <Code2 className="w-10 h-10 text-[#e28c39]" />, title: "Custom Web & Software Development", desc: "High-performance, secure, scalable solutions." },
+            { icon: <Megaphone className="w-10 h-10 text-[#e28c39]" />, title: "Digital Marketing", desc: "SEO, content strategy, ads & more to reach the right audience." },
+            { icon: <Brush className="w-10 h-10 text-[#e28c39]" />, title: "Graphic Design", desc: "Intuitive designs that enhance brand identity." },
+          ].map((service, idx) => (
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: idx * 0.2 }}
+              className="p-10 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all border border-gray-100"
+            >
+              <div className="w-16 h-16 flex items-center justify-center bg-[#e28c39]/10 rounded-full mx-auto">
+                {service.icon}
               </div>
-              <div className="space-y-3">
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                  <span>Social Media Strategy</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                  <span>Content Planning</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                  <span>Digital Marketing</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                  <span>Community Building</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700">
-            <h3 className="text-2xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-400">
-              Platforms & Tools
-            </h3>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="space-y-3">
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
-                  <span>Adobe Creative Suite</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
-                  <span>Figma</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
-                  <span>Final Cut Pro</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
-                  <span>YouTube Studio</span>
-                </div>
-              </div>
-              <div className="space-y-3">
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
-                  <span>Instagram/TikTok</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
-                  <span>Canva</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
-                  <span>Blender</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
-                  <span>After Effects</span>
-                </div>
-              </div>
-            </div>
-          </div>
+              <h4 className="text-xl font-bold text-[#142d54] mt-4">{service.title}</h4>
+              <p className="text-gray-700 mt-2 text-sm">{service.desc}</p>
+            </motion.div>
+          ))}
         </div>
+      </section>
 
-        {/* CTA Section */}
-        <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold mb-4">Let's Create Something Amazing</h3>
-            <p className="text-gray-200 mb-6 max-w-2xl mx-auto">
-              Ready to collaborate on your next project or just want to chat about digital content? 
-              I'm always excited to connect with fellow creators and brands.
-            </p>
-            <button className="bg-white text-gray-900 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300">
-              Get In Touch
-            </button>
-          </div>
-        </div>
-      </div>
+      {/* ---------------- TEAM / EXPERTS ---------------- */}
+      <section className="py-24 bg-[#f5f8fb] text-center">
+        <h2 className="text-4xl md:text-5xl font-bold text-[#142d54] mb-6">Meet Our Team</h2>
+        <p className="text-gray-600 max-w-2xl mx-auto mb-12">10+ passionate experts who craft meaningful digital solutions.</p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="inline-flex items-center justify-center bg-[#e28c39]/20 text-[#142d54] font-semibold px-10 py-6 rounded-3xl shadow-xl"
+        >
+          <Users className="w-10 h-10 mr-4" /> 10+ Experts
+        </motion.div>
+      </section>
+
+      {/* ---------------- IMPACT STATS ---------------- */}
+      <section className="py-24 max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12 text-center">
+        {[
+          { num: "50+", label: "Projects Delivered" },
+          { num: "5+", label: "Years Experience" },
+          { num: "98%", label: "Happy Clients" },
+        ].map((stat, idx) => (
+          <motion.div
+            key={idx}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: idx * 0.2 }}
+            className="bg-white rounded-3xl shadow-lg p-12 hover:shadow-2xl transition-all"
+          >
+            <p className="text-4xl font-bold text-[#e28c39]">{stat.num}</p>
+            <p className="text-gray-700 mt-2">{stat.label}</p>
+          </motion.div>
+        ))}
+      </section>
+
     </div>
   );
 }
